@@ -53,7 +53,12 @@
 }
 
 .friend__content .friend__name {
+  display: block;
   font-weight: 600;
+}
+
+.chats .friend__name {
+  display: inline;
 }
 
 .friend__content .friend__top-text {

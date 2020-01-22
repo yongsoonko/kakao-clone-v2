@@ -25,6 +25,7 @@
   position: absolute;
   width: 60%;
   height: 60%;
+  box-sizing: unset;
   border-radius: inherit;
 }
 

@@ -1,3 +1,13 @@
+.header-wrapper {
+  position: fixed;
+  z-index: 2;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  padding: 10px 20px;
+  background-color: white;
+}
+
 .header {
   display: flex;
   justify-content: space-between;

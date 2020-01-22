@@ -1,0 +1,12 @@
+.g-badge {
+  position: absolute;
+  color: white;
+  font-size: 10px;
+  background-color: #dc5d46;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}

@@ -5,16 +5,38 @@
 }
 
 .friend .friend__avatar {
+  position: relative;
   width: 50px;
+  height: 50px;
   border-radius: 38%;
 }
 
 .friend__avatar.g-avatar {
   width: 70px;
+  height: 70px;
 }
 
 .friend__avatar.m-avatar {
   width: 60px;
+  height: 60px;
+}
+
+.friend__avatar .inner-avatar {
+  position: absolute;
+  width: 60%;
+  height: 60%;
+  border-radius: inherit;
+}
+
+.friend__avatar .inner-avatar:first-child {
+  left: 0;
+  top: 0;
+}
+
+.friend__avatar .inner-avatar:last-child {
+  bottom: 0;
+  right: 0;
+  border: 3px solid white;
 }
 
 .friend .friend__column {
@@ -22,20 +44,42 @@
   align-items: center;
 }
 
+.friend .friend__column.friend__column-block {
+  flex-direction: column;
+}
+
 .friend .friend__avatar {
   margin-right: 15px;
 }
 
 .friend__content .friend__name {
-  display: block;
   font-weight: 600;
+}
+
+.friend__content .friend__top-text {
   margin-bottom: 5px;
+}
+
+.friend__content .friend__chat-count {
+  margin-left: 5px;
+  font-size: 14px;
+}
+
+.friend .friend__new-chat-count {
+  margin-top: 15px;
+  align-self: flex-end;
 }
 
 .friend__content .friend_status,
 .friend__content .friend_bottom-text,
-.friend .chat__timestamp {
+.friend .chat__timestamp,
+.friend .friend__chat-count,
+.friend .friend__chat-mute  {
   opacity: 0.6;
+}
+
+.friend .friend__chat-mute {
+  font-size: 11px;
 }
 
 .friend__content .friend__bottom-text {

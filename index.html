@@ -34,7 +34,34 @@
       </div>
     </header>
     <main class="chats">
-      <ul class="chats_list">
+      <ul class="chats-list">
+        <li class="chats__list">
+          <a href="chat.html">
+            <div class="chats__chat friend friend--lg">
+              <div class="friend__column">
+                <div class="friend__avatar m-avatar">
+                  <img src="images/avatar.jpg" alt="" class="inner-avatar">
+                  <img src="images/avatar2.jpg" alt="" class="inner-avatar">
+                </div>
+                <div class="friend__content">
+                  <div class="friend__top-text">
+                    <span class="friend__name">Lynn</span>
+                    <span class="friend__chat-count">10</span>
+                    <span class="friend__chat-mute"
+                      ><i class="fas fa-microphone-slash"></i
+                    ></span>
+                  </div>
+                  <div class="friend__bottom-text">Going home!</div>
+                </div>
+              </div>
+              <div class="friend__column">
+                <div class="chat__timestamp">
+                  March 8
+                </div>
+              </div>
+            </div>
+          </a>
+        </li>
         <li class="chats__list">
           <a href="chat.html">
             <div class="chats__chat friend friend--lg">
@@ -42,17 +69,26 @@
                 <img
                   src="images/avatar.jpg"
                   alt=""
-                  class="g-avatar friend__avatar"
+                  class="m-avatar friend__avatar"
                 />
                 <div class="friend__content">
-                  <span class="friend__name">Lynn</span>
-                  <span class="friend__bottom-text">Going home!</span>
+                  <div class="friend__top-text">
+                    <span class="friend__name">Lynn</span>
+                    <span class="friend__chat-count">3</span>
+                    <span class="friend__chat-mute"
+                      ><i class="fas fa-microphone-slash"></i
+                    ></span>
+                  </div>
+                  <div class="friend__bottom-text">Going home!</div>
                 </div>
               </div>
-              <div class="friend__column">
-                <span class="chat__timestamp">
+              <div class="friend__column friend__column-block">
+                <div class="chat__timestamp">
                   March 8
-                </span>
+                </div>
+                <div class="g-badge friend__new-chat-count">
+                  3
+                </div>
               </div>
             </div>
           </a>
@@ -68,7 +104,7 @@
         </li>
         <li class="nav__list-item">
           <a href="index.html" class="nav__list-link">
-            <div class="nav__badge">
+            <div class="g-badge nav__badge">
               8
             </div>
             <i class="fas fa-comment"></i
@@ -86,5 +122,8 @@
         </li>
       </ul>
     </nav>
+    <div class="bigScreen">
+      <span class="bigScreen__text">Please make your screen small!</span>
+    </div>
   </body>
 </html>
